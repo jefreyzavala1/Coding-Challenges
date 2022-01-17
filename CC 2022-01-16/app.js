@@ -23,4 +23,4 @@ function sumArray(array) {
 
 console.log(sumArray(null));// 0
 console.log(sumArray([ ]));// 0
-console.log(sumArray([ -6, -20, -1, -10, -12 ]))
+console.log(sumArray([ -6, -20, -1, -10, -12 ]));// -28
