@@ -6,6 +6,5 @@ nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 nextItem("testing", "t") # "e" */
 
 function nextItem(xs, item) {
-    return xs.indexOf(item)==-1?undefined:xs[xs.indexOf(item)+1]  
-  }
-  
+  return xs.indexOf(item) == -1 ? undefined : xs[xs.indexOf(item) + 1];
+}
