@@ -20,3 +20,7 @@ function sumArray(array) {
   array.shift();
   return array.reduce((accu, current) => accu + current, 0);
 }
+
+console.log(sumArray(null));// 0
+console.log(sumArray([ ]));// 0
+
