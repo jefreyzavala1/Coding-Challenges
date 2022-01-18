@@ -25,11 +25,11 @@ The input array will always be valid and formatted as in the example above.
 there are 5 possible meal options and the strings representing the selected meal option will always be formatted in the same way, as follows: 'standard', 'vegetarian', 'vegan', 'diabetic', 'gluten-intolerant'. */
 
 function orderFood(list) {
-    return list.reduce((obj,item)=>{
-      if(!obj[item.meal]){
-        obj[item.meal] = 0;
-      }
-      obj[item.meal]++;
-      return obj;
-    },{})
-  }
+  return list.reduce((obj, item) => {
+    if (!obj[item.meal]) {
+      obj[item.meal] = 0;
+    }
+    obj[item.meal]++;
+    return obj;
+  }, {});
+}
