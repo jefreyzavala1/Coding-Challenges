@@ -45,4 +45,5 @@ console.log(orderFood(list));
  /* {
      "standard":1,
      "vegan":1,
+     "vegetarian":1
 } */
