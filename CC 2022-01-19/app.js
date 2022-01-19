@@ -43,5 +43,5 @@ let list = [{ firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', conti
 
 console.log(orderFood(list));
  /* {
-
+     "standard":1,
 } */
