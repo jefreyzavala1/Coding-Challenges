@@ -17,27 +17,28 @@ For example:
 
 "Jędrzej Błądziński"  -->  "Jedrzej Bladzinski" */
 
-function correctPolishLetters (string) {
-    let array = string.split(' ');
-    let polish={
-      ą:'a',
-      ć: 'c',
-      ę:'e',
-      ł:'l',
-      ń:'n',
-      ó:'o',
-      ś:'s',
-      ź:'z',
-      ż:'z'
-    }
-    let newArray = [];
-    array.forEach((item,i)=>{
-      let str = item.split('');
-      str.forEach((item,i)=>{
-        if(polish[item]){
-        str[i]= polish[item]}
-      })
-      newArray.push(str.join(''));
-    })
-    return newArray.join(' ');
-  }
+function correctPolishLetters(string) {
+  let array = string.split(" ");
+  let polish = {
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z",
+  };
+  let newArray = [];
+  array.forEach((item, i) => {
+    let str = item.split("");
+    str.forEach((item, i) => {
+      if (polish[item]) {
+        str[i] = polish[item];
+      }
+    });
+    newArray.push(str.join(""));
+  });
+  return newArray.join(" ");
+}
