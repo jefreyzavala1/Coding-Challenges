@@ -42,3 +42,7 @@ function correctPolishLetters(string) {
   });
   return newArray.join(" ");
 }
+
+console.log(correctPolishLetters("Jędrzej Błądziński"));// "Jedrzej Bladzinski"
+console.log(correctPolishLetters("Lech Wałęsa"));// "Lech Walesa"
+console.log(correctPolishLetters("Maria Skłodowska-Curie"));// "Maria Sklodowska-Curie"
