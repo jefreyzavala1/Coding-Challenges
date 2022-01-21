@@ -13,3 +13,7 @@ function numberToString(num) {
   //p:can use toString to convert num type to string type
   return num.toString();
 }
+
+console.log(numberToString(67));// '67
+console.log(numberToString(50));// '50'
+console.log(numberToString(22));// '22'
