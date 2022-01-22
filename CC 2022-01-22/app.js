@@ -16,15 +16,11 @@ Input: ["sheep", "sheep", "wolf"]
 Output: "Pls go away and stop eating my sheep" */
 
 function warnTheSheep(queue) {
-
-    //p: will it be just an array of strings?
-    
-    //r:position of sheep that will get eaten as a string interpolated with N 
-    
-    //e:Input: ["sheep", "sheep", "sheep", "wolf", "sheep"]
+  //p: will it be just an array of strings?
+  //r:position of sheep that will get eaten as a string interpolated with N
+  //e:Input: ["sheep", "sheep", "sheep", "wolf", "sheep"]
   //Output "Oi! Sheep number 1! You are about to be eaten by a wolf!"
-    
-    //p:reverse array so position can be somewhat usable
-    //if statement if first element is wolf print "Pls go away and stop eating my sheep" else
-    // use template literal to embed indexOf wolf and embedded
+  //p:reverse array so position can be somewhat usable
+  //if statement if first element is wolf print "Pls go away and stop eating my sheep" else
+  // use template literal to embed indexOf wolf and embedded
 }
