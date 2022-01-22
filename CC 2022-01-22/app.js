@@ -25,8 +25,10 @@ function warnTheSheep(queue) {
   // use template literal to embed indexOf wolf and embedded
 
   queue = queue.reverse();
-  if(queue[0]==='wolf'){
-    return "Pls go away and stop eating my sheep"
+  if (queue[0] === "wolf") {
+    return "Pls go away and stop eating my sheep";
   }
-  return `Oi! Sheep number ${queue.indexOf('wolf')}! You are about to be eaten by a wolf!`
+  return `Oi! Sheep number ${queue.indexOf(
+    "wolf"
+  )}! You are about to be eaten by a wolf!`;
 }
