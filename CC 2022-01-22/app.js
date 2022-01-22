@@ -27,3 +27,4 @@ function warnTheSheep(queue) {
     //p:reverse array so position can be somewhat usable
     //if statement if first element is wolf print "Pls go away and stop eating my sheep" else
     // use template literal to embed indexOf wolf and embedded
+}
