@@ -1,6 +1,6 @@
 function countInversions( array ){
     //P:Will it only be an array of integers?Yes.Will it be anything else besides an
-    //array?NO.
+    //array?No.
     //r:Will it always return an integer value?YES 
     //E:[1,2,3,4] => 0 inversions
       //[1,3,2,4] => 1 inversions : 2 and 3
