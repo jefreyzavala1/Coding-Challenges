@@ -27,6 +27,6 @@ function DNAtoRNA(dna) {
   return dna.join("");
 }
 
-console.log(DNAtoRNA("TTTT"));// "UUUU"
-console.log(DNAtoRNA("GCAT"));// "GCAU"
-console.log(DNAtoRNA("GACCGCCGCC"));// "GACCGCCGCC"
+console.log(DNAtoRNA("TTTT")); // "UUUU"
+console.log(DNAtoRNA("GCAT")); // "GCAU"
+console.log(DNAtoRNA("GACCGCCGCC")); // "GACCGCCGCC"
