@@ -17,4 +17,12 @@ function DNAtoRNA(dna) {
     //p:  can use replaceALL to replace 'T' with 'U?NO i can store string into an array 
     //and check each indivual char using forEach() then compare 'T'if true then replace it with 'U
     //use join then return string 
-}  
+    
+    dna  = dna.split('');
+    dna.forEach((char,index)=>{
+      if(char =='T'){
+        dna[index] = 'U'
+      }
+    })
+  return dna.join('');
+  }
