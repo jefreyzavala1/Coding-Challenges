@@ -8,7 +8,7 @@ function countInversions( array ){
     //p:if array is empty should return 0,function should have a counter to count 
     //inversions which simple refers to the amount of times a number is greater than the number to the right
     //so i would have two loops outer loop will iterate each element and the inner loop will iterate the numbers to the right of 
-    // the element from the outer loop.If element is bigger inversions will increment.
-    
+    // the element from the outer loop.If element is bigger inversions will increment
+
 
 }
