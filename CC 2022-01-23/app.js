@@ -26,3 +26,6 @@ function DNAtoRNA(dna) {
   });
   return dna.join("");
 }
+
+console.log(DNAtoRNA("TTTT"));// "UUUU"
+console.log()
