@@ -23,3 +23,7 @@ function countInversions(array) {
   }
   return inversions;
 }
+
+console.log(countInversions([])); //0
+console.log(countInversions([6, 5, 4, 3, 2, 1])); //15
+console.log(countInversions([6, 5, 4, 3, 3, 3, 3, 2, 1])); //30
