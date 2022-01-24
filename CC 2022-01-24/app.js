@@ -10,5 +10,16 @@ function countInversions( array ){
     //so i would have two loops outer loop will iterate each element and the inner loop will iterate the numbers to the right of 
     // the element from the outer loop.If element is bigger inversions will increment.Loop till end of array.
 
-
+    if (array.length==0){
+        return 0;
+      }
+      let inversions  = 0;
+      for(let i = 0;i < array.length;i++){
+        for(let j = i +1;j < array.length;j++){
+          if(array[i]> array[j]){
+            inversions++;
+          }
+        }
+      }
+      return inversions;
 }
