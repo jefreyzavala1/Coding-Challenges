@@ -26,3 +26,5 @@ function greatestCommonFactor(array) {
   }
   return Math.max(...newArray);
 }
+
+console.log(greatestCommonFactor([1, 8]));//1
