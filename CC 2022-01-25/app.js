@@ -9,3 +9,4 @@ function greatestCommonFactor(array) {
     //P:Will need to store the min value for mod value to iterate to then would need to traverse each item
     //in the array if each item is divisible by the iterator then push to an array and lastly return the max value from 
     //array tha holds the gcf
+}
