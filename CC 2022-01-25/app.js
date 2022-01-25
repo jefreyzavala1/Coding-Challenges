@@ -29,4 +29,4 @@ function greatestCommonFactor(array) {
 
 console.log(greatestCommonFactor([1, 8]));//1
 console.log(greatestCommonFactor([468, 156, 806, 312, 442]));//26
-console.log(greatestCommonFactor([91, 143, 234, 52]));//
+console.log(greatestCommonFactor([91, 143, 234, 52]));//13
