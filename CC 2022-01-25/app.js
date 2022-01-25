@@ -1,3 +1,11 @@
 /* Write a function that returns the greatest common factor of an array of positive integers. Your return value should be a number, you will only receive positive integers.
 
 greatestCommonFactor([46, 14, 20, 88]); // --> 2 */
+
+function greatestCommonFactor(array) {
+    // P: Will it only be an array of numbers?Yes
+    //R: Will return the gcf which is the largest factor that all the numbers share.
+    //E:[46,14,20,88]
+    //P:Will need to store the min value for mod value to iterate to then would need to traverse each item
+    //in the array if each item is divisible by the iterator then push to an array and lastly return the max value from 
+    //array tha holds the gcf
