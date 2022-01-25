@@ -9,4 +9,21 @@ function greatestCommonFactor(array) {
     //P:Will need to store the min value for mod value to iterate to then would need to traverse each item
     //in the array if each item is divisible by the iterator then push to an array and lastly return the max value from 
     //array tha holds the gcf
+
+    let minvaluearray = Math.min(...array);//88
+  let newArray = [];
+  for(let i = 1;i<=minvaluearray;i++){
+    let flag = true;
+    for(let j = 0;j<array.length;j++){
+      if(array[j]%i != 0){
+        flag = false;
+        break;
+      }
+      
+      }
+if(flag==true){
+        newArray.push(i)
+    }
+  }
+  return Math.max(...newArray)
 }
