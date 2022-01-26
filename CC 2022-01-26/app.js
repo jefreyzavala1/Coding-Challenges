@@ -15,4 +15,11 @@ function dup(s) {
     //E:['kelless','keenes']=>['keles','kenes']
     //  ["callalloo","feelless","heelless"]=>['calalo','feles','heles']
     //  ["kelless","voorraaddoosspullen","achcha"]=>['keles','voradospulen','achcha']
+    //P: Have an array that will return the final strings without any consecutive match
+    //  using a foreach to iterate each string and use a for loop to iterate over each individual character
+    //use an array to store each visited character and if current character in the string does not equal to character array
+    // index thats currently visited then add it to array and increment start which represents the current character in the array.
+    // after the end of forEach join the array to form and a string and add it to the newArray that at the end will be returned
+
+    
 }
