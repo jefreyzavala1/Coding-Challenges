@@ -41,6 +41,8 @@ function dup(s) {
   return newArray;
 }
 
-console.log(dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]));//['codewars','picaniny','hubububo']
-console.log(dup(["abracadabra","allottee","assessee"]));//['abracadabra','alote','asese']
-console.log(dup(["kelless","keenness"]));//['keles','kenes']
+console.log(
+  dup(["ccooddddddewwwaaaaarrrrsssss", "piccaninny", "hubbubbubboo"])
+); //['codewars','picaniny','hubububo']
+console.log(dup(["abracadabra", "allottee", "assessee"])); //['abracadabra','alote','asese']
+console.log(dup(["kelless", "keenness"])); //['keles','kenes']
