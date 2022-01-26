@@ -21,5 +21,22 @@ function dup(s) {
     // index thats currently visited then add it to array and increment start which represents the current character in the array.
     // after the end of forEach join the array to form and a string and add it to the newArray that at the end will be returned
 
-    
+    let newArray = [];
+  
+  s.forEach((str)=>{
+    //str = 'abracadabra'
+    let charsArray = [];
+    let start = 0;
+    charsArray[start] = str[0];
+    start = 1;
+    for(let i = 1;i < str.length;i++){
+      if(charsArray[start-1]!=str[i]){
+         charsArray[start] = str[i]
+         start++;
+         }
+    }
+    let strFormed = charsArray.join('');
+    newArray.push(strFormed);
+  })
+  return newArray;
 }
