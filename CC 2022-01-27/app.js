@@ -26,5 +26,5 @@ function common(a, b, c) {
   return newArray.reduce((accu, current) => accu + current, 0);
 }
 
-console.log(common([1,2,3],[5,3,2],[7,3,2]));//5
-console.log(common([1,2,2,3],[5,3,2,2],[7,3,2,2]));//7
+console.log(common([1, 2, 3], [5, 3, 2], [7, 3, 2])); //5
+console.log(common([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2])); //7
