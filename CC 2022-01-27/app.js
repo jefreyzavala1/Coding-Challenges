@@ -15,4 +15,13 @@ function common(a,b,c){
      // if array b c contain element of  in array a if so push it onto newArray and remove element from b and c and finally use reduce on 
      // newArray to return the sum of the array.
 
-}
+     let newArray = [];
+     a.forEach(num=>{
+       if(b.includes(num) && c.includes(num)){
+         newArray.push(num);
+          b.splice(b.indexOf(num),1);
+         c.splice(c.indexOf(num),1);
+       }
+     })
+     return newArray.reduce((accu,current)=> accu + current,0);
+   }
