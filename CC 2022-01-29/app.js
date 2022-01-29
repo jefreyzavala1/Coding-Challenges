@@ -11,29 +11,32 @@ function sortArrays(arr1, arr2) {
 
   let newArr1 = arr1.slice();
   let newArr2 = arr2.slice();
-  
+
   let sortArr1 = [];
   let sortArr2 = [];
-  
+
   let newArray = [];
 
-  arr2 = arr2.sort((a,b)=> a- b);
-  
-  newArr2.forEach((number,i)=>{
+  arr2 = arr2.sort((a, b) => a - b);
+
+  newArr2.forEach((number, i) => {
     let index = arr2.indexOf(number);
-    arr2.splice(index,1,'');
+    arr2.splice(index, 1, "");
     sortArr1[index] = newArr1[i];
-  })
+  });
   newArray.push(sortArr1);
-  
-  arr1 = arr1.sort((a,b)=> a- b);
-  
-  newArr1.forEach((number,i)=>{
+
+  arr1 = arr1.sort((a, b) => a - b);
+
+  newArr1.forEach((number, i) => {
     let index = arr1.indexOf(number);
-    arr1.splice(index,1,'');
+    arr1.splice(index, 1, "");
     sortArr2[index] = newArr2[i];
-  })
+  });
   newArray.push(sortArr2);
   return newArray;
-  
 }
+
+console.log(sortArrays([5, 4, 3, 2, 1], [6, 5, 7, 8, 9])); //[[4,5,3,2,1],[9,8,7,5,6]]
+console.log(sortArrays([2, 1, 3, 4, 5], [5, 6, 7, 8, 9])); //[[2,1,3,4,5],[6,5,7,8,9]]
+console.log(sortArrays([5, 6, 9, 2, 6, 5], [3, 6, 7, 4, 8, 1])); //[[5,5,2,6,9,6],[4,3,1,6,8,7]]
