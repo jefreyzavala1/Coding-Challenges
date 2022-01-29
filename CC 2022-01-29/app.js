@@ -8,3 +8,4 @@ function sortArrays(arr1,arr2){
     //P: will need to make copies from both arrays passed.Will need newArray variable that will return an array of these two arrays.make a copy of both arrays using slice,then sort array2 and find where
     //each item is found and put an empty string using slice so i can take into account dups values,
       //then store the values of arr1 in sortArr1 based on the indeces found in array 2.Do same steps with array2;
+}
