@@ -63,4 +63,25 @@ function squareDigitsSequence(a0) {
     //P:Will use a counter that starts at 8 will will count the number of iterations until number equals to one that was once visited
       //before would need to store each answer in an array so that the next iteration i can compare if that value was already visited.
       //if thats true then return counter which is the amount of sequences done to get answer.
+      
+      let flag = false;
+  let counter = 1;
+  let newArray = [];
+  while(flag!=true){
+    if(newArray.includes(a0)){
+    flag = true;
+      return counter;
+    }
+     newArray.push(a0);
+    counter++;
+    let nStr = a0.toString().split('');
+     nStr = nStr.map(str=> Number(str));
+    a0 = nStr.reduce((accu,current)=> accu + current**2,0);
+    if(newArray.includes(a0)){
+    flag = true;
+      return counter;
+    }
+ 
+  }
+  return 0;
 }
