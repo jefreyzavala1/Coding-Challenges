@@ -87,3 +87,4 @@ function squareDigitsSequence(a0) {
 
 console.log(squareDigitsSequence(16))//9
 console.log(squareDigitsSequence(103));//4
+console.log(squareDigitsSequence(1));///2
