@@ -16,4 +16,24 @@ function sortArrays(arr1, arr2) {
   let sortArr2 = [];
   
   let newArray = [];
+
+  arr2 = arr2.sort((a,b)=> a- b);
+  
+  newArr2.forEach((number,i)=>{
+    let index = arr2.indexOf(number);
+    arr2.splice(index,1,'');
+    sortArr1[index] = newArr1[i];
+  })
+  newArray.push(sortArr1);
+  
+  arr1 = arr1.sort((a,b)=> a- b);
+  
+  newArr1.forEach((number,i)=>{
+    let index = arr1.indexOf(number);
+    arr1.splice(index,1,'');
+    sortArr2[index] = newArr2[i];
+  })
+  newArray.push(sortArr2);
+  return newArray;
+  
 }
