@@ -63,3 +63,4 @@ function squareDigitsSequence(a0) {
     //P:Will use a counter that starts at 8 will will count the number of iterations until number equals to one that was once visited
       //before would need to store each answer in an array so that the next iteration i can compare if that value was already visited.
       //if thats true then return counter which is the amount of sequences done to get answer.
+}
