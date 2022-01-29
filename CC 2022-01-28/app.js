@@ -84,3 +84,5 @@ function squareDigitsSequence(a0) {
   }
   return 0;
 }
+
+console.log(squareDigitsSequence(16))//9
