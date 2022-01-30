@@ -16,3 +16,7 @@ let findInArray = function(array, iterator) {
     value = array.findIndex((item,index)=> iterator(item,index))
     return value;
   };
+
+  console.log(findInArray([], trueIfEven));//-1
+  console.log(findInArray([1,3,5,6,7]));//3
+  console.log(findInArray(["one","two","three","four","five","six"]));//4
