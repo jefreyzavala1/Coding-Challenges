@@ -24,4 +24,10 @@ function upArray(arr){
             return null;
         }
     }
+    let str = arr.join('');
+    str = Number(str);
+    str++;
+    let strToNum = str.toString().split('');
+    strToNum = strToNum.map(el=>Number(el));
+    return strToNum;
     }
