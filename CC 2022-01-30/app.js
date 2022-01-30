@@ -19,5 +19,9 @@ function upArray(arr){
        if ((typeof arr === 'undefined') || (arr === null) || (arr.length === 0)) {
           return null;
       }
-
+      for (var i = 0; i < arr.length; i++) {
+        if ((arr[i] < 0) || (typeof arr[i] !== 'number') || (arr[i] > 9)) {
+            return null;
+        }
+    }
     }
