@@ -31,3 +31,6 @@ function upArray(arr) {
   strToNum = strToNum.map((el) => Number(el));
   return strToNum;
 }
+
+console.log(upArray([2,3,9]));
+
