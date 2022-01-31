@@ -22,4 +22,16 @@ function array(arr){
     //P:if array is empty return null if not then split string based on a comma delimeter and store in array
       //next remove first and last values using splice
       //lastly return array joined by a space but if array formed is empty then return null
+      if(arr==''){
+        return null
+      }
+     
+    let array = arr.split(',');
+      array.splice(0,1);
+      array.splice(-1,1);
+      return array.join(' ')===''?null:array.join(' ')
     }
+
+    console.log(array('1,2,3'));//'2'
+    console.log(array('1,2,3,4'));//'2 3'
+    console.log(array('1,2,3,4,5'));//'2 3 4'
