@@ -13,3 +13,6 @@ function isIntArray(arr) {
   }
   return arr.every((el) => Number(el) == el);
 }
+
+console.log(isIntArray([]));//true
+console.log(isIntArray([1,2,3,4]));//true
