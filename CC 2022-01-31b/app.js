@@ -8,8 +8,8 @@ returns true / True if array is empty.
 returns false / False for every other input. */
 
 function isIntArray(arr) {
-    if(arr==null){
-      return false
-    }
-      return arr.every(el=>Number(el)==el)
-    }
+  if (arr == null) {
+    return false;
+  }
+  return arr.every((el) => Number(el) == el);
+}
