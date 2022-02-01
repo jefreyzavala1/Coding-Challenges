@@ -36,7 +36,14 @@ function addUsername(list) {
     //create a date variable to then subtract the year with the age 
     //spread the dev,object create a new prop with username and concat the first name last name and year.
     const thisYear = new Date().getFullYear();
-    return list.map(dev=>{
-      
-    })
+  list.forEach(dev=>{
+    let username = '';
+    let lowerFirstName = dev.firstName.toLowerCase();
+    let lastNameFirstLetter = dev.lastName[0].toLowerCase();
+    let age = thisYear - dev.age;
+    username = lowerFirstName + lastNameFirstLetter + age;
+    dev.username = username;
+  })
+  return list;
+
   }
