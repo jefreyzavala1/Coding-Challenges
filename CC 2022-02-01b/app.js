@@ -18,3 +18,25 @@ firstName in lower-case;
 first letter of the lastName in lower-case; and
 the birth year which for the purpose of this kata is calculated simply by subtracting age from the current year. Please make sure that your function delivers the correct birth year irrespective of when it will be executed, 
 for example it should also work correctly for a meetup organised in 10-years-time. The example above assumes that the function is run in year 2020. */
+
+function addUsername(list) {
+    // thank you for checking out the Coding Meetup kata :)
+    
+    //p:arrays? objects? array of objects?all values are string types except age
+    
+    //r:array of objects representing dev with new prop of username,which will have a string value
+    
+    //e: firstName:'Emily', lastName:'N.',age:30==,
+    //   username:'emilyn1990'
+    //   firstName:'Nor', lastName:'E.', age:20,
+    //   username:'nore2000'
+    
+    //p:iterate over the array using for each or for loop, and with each iteration we are going 
+    // to target the age, first name and last name
+    //create a date variable to then subtract the year with the age 
+    //spread the dev,object create a new prop with username and concat the first name last name and year.
+    const thisYear = new Date().getFullYear();
+    return list.map(dev=>{
+      
+    })
+  }
