@@ -16,3 +16,4 @@ function isIntArray(arr) {
 
 console.log(isIntArray([]));//true
 console.log(isIntArray([1,2,3,4]));//true
+console.log(isIntArray([1,2,3,NaN]));//false
