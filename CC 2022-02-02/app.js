@@ -39,4 +39,4 @@ function foldArray(array, runs)
   // can use pop and shift to extract and add elements and store in new array.Will need to continue runs amount of time 
   // but for each run will need to check if array is even or odd.If even then just add last by pop and front by shift until ,
   //length of array is zero and reasign newArray for every run times.Finally return array.
-  
+}
