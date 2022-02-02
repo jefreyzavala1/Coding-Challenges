@@ -39,4 +39,26 @@ function foldArray(array, runs)
   // can use pop and shift to extract and add elements and store in new array.Will need to continue runs amount of time 
   // but for each run will need to check if array is even or odd.If even then just add last by pop and front by shift until ,
   //length of array is zero and reasign newArray for every run times.Finally return array.
-}
+
+  if(array.length==1){
+    return array;
+  }
+ let arr = array.slice(0);
+  for(let i = 1;i<=runs;i++){
+     let newArray = [];
+    if(arr.length % 2 ===1){
+      let middleGuy = Math.floor(arr.length/2);
+      while(arr.length!==1){
+        newArray.unshift(arr.pop() + arr.shift())
+      }
+      newArray.push(arr[0]);
+
+      }else{
+        while(arr.length!==0){
+          newArray.push(arr.pop() + arr.shift())
+        }
+      }
+      arr =  newArray
+    }
+  return arr;
+  }
