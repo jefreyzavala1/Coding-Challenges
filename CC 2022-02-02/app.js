@@ -60,3 +60,8 @@ function foldArray(array, runs) {
   }
   return arr;
 }
+
+let input = [ 1, 2, 3, 4, 5 ];
+console.log(foldArray(input, 1));//[6,6,3]
+console.log(foldArray(input, 2));//[9,6]
+console.log(foldArray(input, 3));//[15]
