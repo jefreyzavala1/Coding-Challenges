@@ -24,41 +24,39 @@ If an array with one element is folded, it stays as the same array.
 
 The input array should not be modified! */
 
-function foldArray(array, runs)
-{
+function foldArray(array, runs) {
   //p:array of integer and will never be null.So no need to check if array is null
   //  runs will be a positive integer greater than 0 which describes how folds array needs to do.
-  
+
   //r:will return an array of integer will is the result of array being folde runs amount of times.
-  
+
   //e:[1,2,3,4,5], runs= 1, =>[6,6,3]
-  
+
   //p:if array has one element just return array regardless of runs times,
   //  if array's length is odd then identify middle integer by Math.floor(array.length/2),
   //  integer will stay in place while from the end of the array keep adding to number in the front,
-  // can use pop and shift to extract and add elements and store in new array.Will need to continue runs amount of time 
+  // can use pop and shift to extract and add elements and store in new array.Will need to continue runs amount of time
   // but for each run will need to check if array is even or odd.If even then just add last by pop and front by shift until ,
   //length of array is zero and reasign newArray for every run times.Finally return array.
 
-  if(array.length==1){
+  if (array.length == 1) {
     return array;
   }
- let arr = array.slice(0);
-  for(let i = 1;i<=runs;i++){
-     let newArray = [];
-    if(arr.length % 2 ===1){
-      let middleGuy = Math.floor(arr.length/2);
-      while(arr.length!==1){
-        newArray.unshift(arr.pop() + arr.shift())
+  let arr = array.slice(0);
+  for (let i = 1; i <= runs; i++) {
+    let newArray = [];
+    if (arr.length % 2 === 1) {
+      let middleGuy = Math.floor(arr.length / 2);
+      while (arr.length !== 1) {
+        newArray.unshift(arr.pop() + arr.shift());
       }
       newArray.push(arr[0]);
-
-      }else{
-        while(arr.length!==0){
-          newArray.push(arr.pop() + arr.shift())
-        }
+    } else {
+      while (arr.length !== 0) {
+        newArray.push(arr.pop() + arr.shift());
       }
-      arr =  newArray
     }
-  return arr;
+    arr = newArray;
   }
+  return arr;
+}
