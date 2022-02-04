@@ -30,5 +30,6 @@ function switchItUp(number){
     return convert[number]
 }
 
-console.log(switchItUp(1),"One");
-console.log(switchItUp(3),"Three")
+console.log(switchItUp(1));//"One"
+console.log(switchItUp(3));//"Three"
+console.log(switchItUp(5));//"Five"
