@@ -4,11 +4,10 @@ function ghostBusters(building) {
     
     //r: return a string with no white spaces
     
-    //e:
-    let array =building.split('');
-    if(array.includes(' ')){
-      return 'Nope, there may still be a ghost in the building. Try again.'
-    }else{
-      return "You just wanted my autograph didn't you?", 'Nope, as there were no ghosts in the BusStation you need to return a witty retort.'
-    }
+    //e:"Skyscraper" == "Skyscraper"
+  
+    //p: trim(), replace, use method to iterate over the phrase and identify the white spaces and remove it.
+   let arrayOfLetters  = building.split('')
+   arrayOfLetters = arrayOfLetters.filter(letters=> letters!=' ')
+    return arrayOfLetters.join('')
   }
