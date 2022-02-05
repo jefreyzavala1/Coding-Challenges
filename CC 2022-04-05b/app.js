@@ -8,6 +8,9 @@ function ghostBusters(building) {
   
     //p: trim(), replace, use method to iterate over the phrase and identify the white spaces and remove it.
    let arrayOfLetters  = building.split('')
-   arrayOfLetters = arrayOfLetters.filter(letters=> letters!=' ')
-    return arrayOfLetters.join('')
+   
+   const space = arrayOfLetters.includes(' ');
+    
+    return space ? arrayOfLetters.filter(el=> el!==' ').join('') : "You just wanted my autograph didn't you?"
+    
   }
