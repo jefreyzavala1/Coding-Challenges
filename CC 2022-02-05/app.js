@@ -9,4 +9,18 @@ function evenNumbers(array, number) {
     
     //p:will reverse initial array and extract the (number) of even numbers (number) times and insert
     // in newArray and finally it reverse it and return it
+    
+    let array1 = array.reverse();
+    let counter = 0;
+    let newArray = [];
+    for(let i = 0;i<array.length;i++){
+      if(array[i]%2==0){
+        newArray.push(array[i])
+        counter++;
+      }
+      if(counter==number){
+        break;
+      }
+    }
+    return newArray.reverse()
   }
