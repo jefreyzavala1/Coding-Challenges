@@ -1,5 +1,15 @@
 function findOddNames(list) {
-    // thank you for checking out the Coding Meetup kata :)
+  
+    //p:an array of objects
+    
+    //r:an array of objects that consists of elements where the ascci value of firsname is odd
+    
+    //e:{ firstName: 'Aba', lastName: 'N.', country: 'Ghana', continent: 'Africa', age: 21, language: 'Python' },
+   // { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }]=>
+   // { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }]
+    
+    //p:have an array that will hold all objects, then for each object in the list,extract the firsname and iterate over it
+    //using a forloop and summ its ascci if at the end the sum is odd push onto the array of objects finally return array.
     let obj = [];
     
     list.forEach(name=>{
