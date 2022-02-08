@@ -1,13 +1,23 @@
-/* Array Exchange and Reversing
+function exchangeWith(a, b) {
 
-It's time for some array exchange! The objective is simple: exchange the elements of two arrays in-place in a way that their new content is also reversed.
-
-// before
-const myArray = ['a', 'b', 'c'];
-const otherArray = [1, 2, 3];
-
-exchangeWith(myArray, otherArray);
-
-// after
-myArray => [3, 2, 1]
-otherArray => ['c', 'b', 'a'] */
+    //p:Will two arrays,can either be of strings or numbers?
+    
+    //r:nothing just modify global values passed to params.
+    
+    //e:const myArray = ['a', 'b', 'c'];
+     // const otherArray = [1, 2, 3];=>myArray => [3, 2, 1]
+     // otherArray => ['c', 'b', 'a']
+     
+    
+    //p:make a cop of each parameter, then reverse order , then for each array copy use splice
+    //to remove current elements and add the elements from other array;
+    
+    let arrayCopyA = a.slice(0);
+    let arrayCopyB = b.slice(0);
+    
+    arrayCopyA = arrayCopyA.reverse();
+    arrayCopyB =arrayCopyB.reverse();
+    
+    arrayCopyA = a.splice(0,-1,...arrayCopyB);
+    arrayCopyB = b.splice(0,-1,...arrayCopyA)
+  }
