@@ -18,6 +18,8 @@ function exchangeWith(a, b) {
     arrayCopyA = arrayCopyA.reverse();
     arrayCopyB =arrayCopyB.reverse();
     
-    arrayCopyA = a.splice(0,-1,...arrayCopyB);
-    arrayCopyB = b.splice(0,-1,...arrayCopyA)
+    let arrayTemp = arrayCopyA;
+    
+    arrayCopyA = a.splice(0,a.length,...arrayCopyB);
+    arrayCopyB = b.splice(0,b.length,...arrayTemp)
   }
