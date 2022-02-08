@@ -1,32 +1,30 @@
 function exchangeWith(a, b) {
+  //p:Will two arrays,can either be of strings or numbers?
 
-    //p:Will two arrays,can either be of strings or numbers?
-    
-    //r:nothing just modify global values passed to params.
-    
-    //e:const myArray = ['a', 'b', 'c'];
-     // const otherArray = [1, 2, 3];=>myArray => [3, 2, 1]
-     // otherArray => ['c', 'b', 'a']
-     
-    
-    //p:make a cop of each parameter, then reverse order , then for each array copy use splice
-    //to remove current elements and add the elements from other array;
-    
-    let arrayCopyA = a.slice(0);
-    let arrayCopyB = b.slice(0);
-    
-    arrayCopyA = arrayCopyA.reverse();
-    arrayCopyB =arrayCopyB.reverse();
-    
-    let arrayTemp = arrayCopyA;
-    
-    arrayCopyA = a.splice(0,a.length,...arrayCopyB);
-    arrayCopyB = b.splice(0,b.length,...arrayTemp)
-  }
+  //r:nothing just modify global values passed to params.
 
-  const a = ["1", "2", "3", "4", "5", "6", "7"];
-    const b = ["a", "b", "c"];
+  //e:const myArray = ['a', 'b', 'c'];
+  // const otherArray = [1, 2, 3];=>myArray => [3, 2, 1]
+  // otherArray => ['c', 'b', 'a']
 
-    exchangeWith(a,b);
-    console.log(a);//["a", "b", "c"]
-    console.log(b);//["1", "2", "3", "4", "5", "6", "7"]
+  //p:make a cop of each parameter, then reverse order , then for each array copy use splice
+  //to remove current elements and add the elements from other array;
+
+  let arrayCopyA = a.slice(0);
+  let arrayCopyB = b.slice(0);
+
+  arrayCopyA = arrayCopyA.reverse();
+  arrayCopyB = arrayCopyB.reverse();
+
+  let arrayTemp = arrayCopyA;
+
+  arrayCopyA = a.splice(0, a.length, ...arrayCopyB);
+  arrayCopyB = b.splice(0, b.length, ...arrayTemp);
+}
+
+const a = ["1", "2", "3", "4", "5", "6", "7"];
+const b = ["a", "b", "c"];
+
+exchangeWith(a, b);
+console.log(a); //["a", "b", "c"]
+console.log(b); //["1", "2", "3", "4", "5", "6", "7"]
