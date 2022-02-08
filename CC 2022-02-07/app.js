@@ -23,3 +23,10 @@ function exchangeWith(a, b) {
     arrayCopyA = a.splice(0,a.length,...arrayCopyB);
     arrayCopyB = b.splice(0,b.length,...arrayTemp)
   }
+
+  const a = ["1", "2", "3", "4", "5", "6", "7"];
+    const b = ["a", "b", "c"];
+
+    exchangeWith(a,b);
+    console.log(a);//["a", "b", "c"]
+    console.log(b);//["1", "2", "3", "4", "5", "6", "7"]
