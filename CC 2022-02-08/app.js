@@ -17,11 +17,15 @@ Output: a positive integer, the last patient's chair number. */
 
 function lastChair(N){
   
-    //p:
+    //p:numbers 1-10?numbers represent patients chair position
     
-    //r:
+    //r: last'patients chair's number
     
-    //e:
+    //e:10==9 is the chair number
     
-    //p:
+    //p:for each elemet i have to track the max distance between each other when found insert element math.floor(max/2)
+    //need to variable begging paetient and last patient then calculate whose farther
+    //first will insert first and last patients in array;
+    
+    return N -1;
   }
