@@ -1,4 +1,4 @@
-There's a waiting room with N chairs set in single row. Chairs are consecutively numbered from 1 to N. First is closest to the entrance (which is exit as well).
+/* There's a waiting room with N chairs set in single row. Chairs are consecutively numbered from 1 to N. First is closest to the entrance (which is exit as well).
 
 For some reason people choose a chair in the following way
 
@@ -13,4 +13,4 @@ Patients	1	7	5	8	3	9	4	6	10	2
 Your task is to find last patient's chair's number.
 
 Input: number of chairs N, an integer greater than 2.
-Output: a positive integer, the last patient's chair number.
+Output: a positive integer, the last patient's chair number. */
