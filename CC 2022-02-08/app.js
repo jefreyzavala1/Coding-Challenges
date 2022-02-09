@@ -14,3 +14,14 @@ Your task is to find last patient's chair's number.
 
 Input: number of chairs N, an integer greater than 2.
 Output: a positive integer, the last patient's chair number. */
+
+function lastChair(N){
+  
+    //p:
+    
+    //r:
+    
+    //e:
+    
+    //p:
+  }
