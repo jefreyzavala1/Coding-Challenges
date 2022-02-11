@@ -35,3 +35,7 @@ function validate(password) {
   }
   return false;
 }
+
+console.log(validate('djI38D55'));//true
+console.log(validate('a2.d412'));//false
+console.log(validate('Password123'));//true
