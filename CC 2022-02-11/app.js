@@ -16,19 +16,19 @@ function validate(password) {
     }
     
     let array = password.split('');
-    console.log(array)
-    let arrayOfNums = array.filter(char=>Number(char))
-    //console.log(arrayOfNums);
-    let arrayOfLower = array.filter(char=>char===char.toLowerCase() && !Number(char))
-   // console.log(arrayOfLower);
-    let arrayOfUpper = array.filter(char=>char===char.toUpperCase() && !Number(char))
-    console.log(arrayOfNums)
-    if(arrayOfNums.length >=1){
-      if(arrayOfLower.length >=1){
-        if(arrayOfUpper.length >=1){
-          return true
-        }
+  //console.log(array)
+  let arrayOfNums = array.filter(char=>Number(char))
+  //console.log(arrayOfNums);
+  let arrayOfLower = array.filter(char=>char===char.toLowerCase() && !Number(char))
+ // console.log(arrayOfLower);
+  let arrayOfUpper = array.filter(char=>char===char.toUpperCase() && !Number(char))
+  //console.log(arrayOfNums)
+  if(arrayOfNums.length >=1){
+    if(arrayOfLower.length >=1){
+      if(arrayOfUpper.length >=1){
+        return true
       }
     }
-    return false;
   }
+  return false;
+}
