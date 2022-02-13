@@ -36,3 +36,4 @@ function mostAppear(arr) {
 }
 
 console.log(mostAppear([0,1,3,3,3,3,3,1,0]));//3
+console.log(mostAppear([1,2,1,3,1,4,1,5,1]));//1
