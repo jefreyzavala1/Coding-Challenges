@@ -8,3 +8,4 @@ function consecutive(arr, a, b) {
 
   console.log()
   console.log()
+  console.log()
