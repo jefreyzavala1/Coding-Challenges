@@ -19,3 +19,6 @@ function consecutive(arr, a, b) {
 
   return Math.abs(aIndex - bIndex) === 1;
 }
+
+console.log(consecutive([1, 3, 5, 7], 3, 7));//false
+
