@@ -21,4 +21,4 @@ function consecutive(arr, a, b) {
 }
 
 console.log(consecutive([1, 3, 5, 7], 3, 7));//false
-
+console.log(consecutive([1, 3, 5, 7], 3, 1));//true
