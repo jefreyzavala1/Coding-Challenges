@@ -11,7 +11,12 @@ function consecutive(arr, a, b) {
     
     //e:[1,3,5,7] , a = 3, b = 7 => return false;
     //  [1,3,5,7] , a = 3, b = 1 => return true
-
-  console.log();
-  console.log();
-  console.log();
+    
+    //p: would need to obtain index of both using indexOf then if difference is one that means that they are next to each
+    // other inn the array.
+    
+    let aIndex = arr.indexOf(a);
+    let bIndex = arr.indexOf(b);
+    
+    return Math.abs(aIndex - bIndex)===1
+  }
