@@ -3,8 +3,14 @@
 It is guaranteed that a and b are both present in arr. */
 
 function consecutive(arr, a, b) {
-    // Your code here...
-  }
+  
+    //p:an array of unique integers.And two numbers being a and b.
+    
+    //r:a boolean which represents true if both a and b appear consecutive (next to each other)
+    // or false if they dont in the array.
+    
+    //e:[1,3,5,7] , a = 3, b = 7 => return false;
+    //  [1,3,5,7] , a = 3, b = 1 => return true
 
   console.log()
   console.log()
