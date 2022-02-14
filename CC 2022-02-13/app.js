@@ -12,6 +12,6 @@ function consecutive(arr, a, b) {
     //e:[1,3,5,7] , a = 3, b = 7 => return false;
     //  [1,3,5,7] , a = 3, b = 1 => return true
 
-  console.log()
-  console.log()
   console.log();
+  console.log()
+  console.log()
