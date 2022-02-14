@@ -5,3 +5,5 @@ It is guaranteed that a and b are both present in arr. */
 function consecutive(arr, a, b) {
     // Your code here...
   }
+
+  console.log()
