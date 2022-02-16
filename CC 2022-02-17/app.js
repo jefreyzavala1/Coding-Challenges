@@ -31,6 +31,6 @@ function countRedBeads(n) {
   return red.length * count;
 }
 
-console.log(countRedBeads(0));//0
-console.log(countRedBeads(3));//4
-console.log(countRedBeads(5));//8
+console.log(countRedBeads(0)); //0
+console.log(countRedBeads(3)); //4
+console.log(countRedBeads(5)); //8
