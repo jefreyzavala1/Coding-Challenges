@@ -14,6 +14,20 @@ function countRedBeads(n) {
     //e: n = 3, bbrrbbrrbb =>4 red
     //   n = 5, bbrrbbrrbbrrbbrrbb => 8reds
     
-    //p: will need to have a bead string of sets of two as well
+    //p: will need to have a blue bead string  of two as well
     // as red bead of length of two
+    
+    let blue = 'bb';
+    let red  = 'rr';
+    
+    let count =-1;
+    if(n <1){
+      return 0;
+    }
+    
+    for(let i = 0; i < n;i++){
+      count++;
+    }
+    
+    return red.length*count;
   }
