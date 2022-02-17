@@ -18,3 +18,72 @@ Example 3:
 
 Input: s = "(]"
 Output: false */
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+ var isValid = function(s) {
+    
+    
+    let sarray = s.split('');
+    let mid = Math.floor(sarray.length/2);
+    let firstArray = sarray.slice(0,mid);
+    let secondArray = sarray.slice(mid);
+    console.log(firstArray);
+    console.log(secondArray)
+    let flag = true;
+    
+    if(s.length % 2 == 1){
+        return false;
+    }
+    
+    while(firstArray.length!=0){
+        let elementOne = firstArray.shift();
+        console.log(elementOne)
+        if(elementOne ==='{'){
+            
+            if(secondArray.length==0)
+            {
+                if(firstArray.lastIndexOf('}')){
+                    firstArray.splice(firstArray.lastIndexOf('}'),1)
+                }else{
+                    flag = false;
+                }
+            }else{
+                                                   
+            if(secondArray.lastIndexOf('}')){
+                secondArray.splice(secondArray.lastIndexOf('}'),1)
+            }else{
+                flag = false;
+            }
+                }
+                
+                
+            }
+        if (elementOne === '('){
+            
+            if(secondArray.length==0)
+            {
+                if(firstArray.lastIndexOf(')')){
+                    firstArray.splice(firstArray.lastIndexOf(')'),1)
+                }else{
+                    flag = false;
+                }
+            }else{
+                                                   
+            if(secondArray.lastIndexOf(')')){
+                secondArray.splice(secondArray.lastIndexOf(')'),1)
+            }else{
+                flag = false;
+                
+            }
+                }
+                
+                
+            }
+           
+    }
+    return flag;
+    
+};
