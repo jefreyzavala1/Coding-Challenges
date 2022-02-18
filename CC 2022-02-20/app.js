@@ -7,20 +7,18 @@ For example, 7 is a prime because it is only divisible by 1 and 7. For example, 
 You can assume that the input number is a positive integer. */
 
 const isPrime = (n) => {
-    let flag = true;
-    if(n<=1){
+  let flag = true;
+  if (n <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) {
       return false;
     }
-    for(let i =2 ; i<=Math.sqrt(n);i++){
-      if(n%i==0){
-        return false;
-        
-      }
-      
-    }
-    return true;
-  };
+  }
+  return true;
+};
 
-  isPrime(2); // -> true
-  isPrime(4); // -> false
-  isPrime(31); // -> true
+isPrime(2); // -> true
+isPrime(4); // -> false
+isPrime(31); // -> true
