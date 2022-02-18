@@ -20,3 +20,7 @@ const isPrime = (n) => {
     }
     return true;
   };
+
+  isPrime(2); // -> true
+  isPrime(4); // -> false
+  isPrime(31); // -> true
