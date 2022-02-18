@@ -22,3 +22,4 @@ const isPrime = (n) => {
 isPrime(2); // -> true
 isPrime(4); // -> false
 isPrime(31); // -> true
+isPrime(2048); // -> false
