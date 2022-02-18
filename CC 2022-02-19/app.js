@@ -33,7 +33,7 @@ Output: false */
     console.log(firstArray);
     console.log(secondArray)
     let flag = true;
-    
+    let count = 0;
     if(s.length % 2 == 1){
         return false;
     }
@@ -45,17 +45,19 @@ Output: false */
             
             if(secondArray.length==0)
             {
-                if(firstArray.lastIndexOf('}')){
+                if(firstArray.lastIndexOf('}')>=0){
                     firstArray.splice(firstArray.lastIndexOf('}'),1)
                 }else{
                     flag = false;
+                    
                 }
             }else{
                                                    
-            if(secondArray.lastIndexOf('}')){
+            if(secondArray.lastIndexOf('}')>=0){
                 secondArray.splice(secondArray.lastIndexOf('}'),1)
             }else{
                 flag = false;
+                
             }
                 }
                 
@@ -65,17 +67,21 @@ Output: false */
             
             if(secondArray.length==0)
             {
-                if(firstArray.lastIndexOf(')')){
+                if(firstArray.lastIndexOf(')')>=0){
                     firstArray.splice(firstArray.lastIndexOf(')'),1)
                 }else{
                     flag = false;
+                    
+                    
                 }
             }else{
-                                                   
-            if(secondArray.lastIndexOf(')')){
+                                              
+            if(secondArray.lastIndexOf(')')>=0){
+                
                 secondArray.splice(secondArray.lastIndexOf(')'),1)
             }else{
                 flag = false;
+                
                 
             }
                 }
@@ -84,6 +90,6 @@ Output: false */
             }
            
     }
+
     return flag;
-    
-};
+}
