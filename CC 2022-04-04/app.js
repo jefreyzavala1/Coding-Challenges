@@ -12,6 +12,7 @@
 
 // * [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
+
 function mergeArrays(arr1, arr2) {
     let merge = arr1.filter( item => !arr2.includes(item));
      let arr3 = merge.concat(arr2);
