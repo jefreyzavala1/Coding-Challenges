@@ -12,3 +12,17 @@ function reverse(list) {
     );
   }
   compareSquareCubeSum([2,2,2],[2,2,2]);
+  //Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+// Some cases:
+// [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+// [68, -1, 1, -7, 10, 10] => [-1, 10]
+function multiple(array) {
+    return array.filter((number, i) => number % i == 0);
+  }
+  console.log(multiple([68, -1, 1, -7, 10, 10]));
+  //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+  function sumOfArray(array) {
+    return array.reduce((accu, current) => accu + Number(current), 0);
+  }
+  
+  console.log(sumOfArray(["2", "2", "3", 3]));
