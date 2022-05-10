@@ -4,3 +4,19 @@ Examples:
 solve( [[1, 2],[3, 4]] ) = 8. The max product is given by 2 * 4
 solve( [[10,-15],[-1,-3]] ) = 45, given by (-15) * (-3)
 solve( [[1,-1],[2,3],[10,-100]] ) = 300, given by (-1) * 3 * (-100) */
+
+function solve(arr) {
+  let product = 1;
+
+  for (let i = 0; i < arr[0].length; i++) {
+    let mult = 1;
+    for (let j = 0; j < arr.length; j++) {
+      mult *= arr[j][i];
+    }
+    if (mult > product) {
+      product = mult;
+    }
+  }
+  return product;
+}
+//need fixing
