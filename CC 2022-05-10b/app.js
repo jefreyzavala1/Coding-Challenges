@@ -11,3 +11,7 @@ function tripleTrouble(one, two, three) {
   }
   return str;
 }
+
+console.log(tripleTrouble("aaa", "bbb", "ccc")); //"abcabcabc"
+console.log(tripleTrouble("aaaaaa", "bbbbbb", "cccccc")); //"abcabcabcabcabcabc"
+console.log(tripleTrouble("burn", "reds", "roll")); //"brrueordlnsl"
