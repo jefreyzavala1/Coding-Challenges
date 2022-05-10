@@ -1,7 +1,6 @@
-/* Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.
+/* In this Kata, you will be given a multi-dimensional array containing 2 or more sub-arrays of integers. Your task is to find the maximum product that can be formed by taking any one element from each sub-array.
 
-For example:
-
-peak([1,2,3,5,3,2,1]) = 3, because the sum of the elements at indexes 0,1,2 == sum of elements at indexes 4,5,6. We don't sum index 3.
-peak([1,12,3,3,6,3,1]) = 2
-peak([10,20,30,40]) = -1 */
+Examples:
+solve( [[1, 2],[3, 4]] ) = 8. The max product is given by 2 * 4
+solve( [[10,-15],[-1,-3]] ) = 45, given by (-15) * (-3)
+solve( [[1,-1],[2,3],[10,-100]] ) = 300, given by (-1) * 3 * (-100) */
