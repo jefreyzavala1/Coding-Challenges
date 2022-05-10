@@ -26,3 +26,6 @@ function isOddHeavy(n) {
 
   return true;
 }
+
+console.log(isOddHeavy([0, 2, 19, 4, 4])); //true
+console.log(isOddHeavy([1, -2, -1, 2])); //false
