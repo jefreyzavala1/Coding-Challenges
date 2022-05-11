@@ -18,7 +18,7 @@ const arrCheck = (value) => {
   return flag;
 };
 
-console.log(arrCheck([]));//true
-console.log(arrCheck([['string']]));//true
-console.log(arrCheck([[],{}]));//false
-console.log(arrCheck([[1],[2],[3]]));//true
+console.log(arrCheck([])); //true
+console.log(arrCheck([["string"]])); //true
+console.log(arrCheck([[], {}])); //false
+console.log(arrCheck([[1], [2], [3]])); //true
