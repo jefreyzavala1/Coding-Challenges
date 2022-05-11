@@ -25,3 +25,7 @@ function transposeTwoStrings(array) {
   st = st.slice(0, -1).split("undefined").join(" ");
   return st;
 }
+
+console.log(transposeTwoStrings(["Hello", "World"])); // "H W\ne o\nl r\nl l\no d"
+console.log(transposeTwoStrings(["joey", "louise"])); // "j l\no o\ne u\ny i\n  s\n  e"
+console.log(transposeTwoStrings(["!a!a!", "?b?b"])); // "! ?\na b\n! ?\na b\n!  "
