@@ -16,13 +16,12 @@ You don't have to modify the case (i.e. no need to change to upper or lower)
 If one string is longer than the other, there should be a space where the character would be
  */
 
-function transposeTwoStrings (array) {
-    let strMax = Math.max(array[0].length,array[1].length)
-    let st = '';
-    for(let i = 0; i < strMax;i++){
-      
-      st+= array[0][i] + ' ' +  array[1][i] + '\n';
-    }
-    st = st.slice(0,-1).split('undefined').join(' ');
-   return st
+function transposeTwoStrings(array) {
+  let strMax = Math.max(array[0].length, array[1].length);
+  let st = "";
+  for (let i = 0; i < strMax; i++) {
+    st += array[0][i] + " " + array[1][i] + "\n";
   }
+  st = st.slice(0, -1).split("undefined").join(" ");
+  return st;
+}
