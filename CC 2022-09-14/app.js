@@ -31,4 +31,6 @@ function oddOrEven(array) {
   
 }
 
-console.log()
+console.log(oddOrEven([0,1,5]));//'even'
+console.log(oddOrEven([0,1,3]));//'even'
+console.log(oddOrEven([1]));//'odd'
