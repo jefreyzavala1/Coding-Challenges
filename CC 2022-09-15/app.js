@@ -1,10 +1,9 @@
-var number=function(array){
-
-    //p: an array of strings , empty array can be passed
-   //r: an array where each string is mapped with correct order starting with one
+var number = function (array) {
+  //p: an array of strings , empty array can be passed
+  //r: an array where each string is mapped with correct order starting with one
   //e: [] => [], ['a','b','c']=> ['1: a', '2: b' , '3: c']
-   //p: loop array have a counter that starts at 1 then append : ' ' arr[i] push to new array or also use map
-    
+  //p: loop array have a counter that starts at 1 then append : ' ' arr[i] push to new array or also use map
+
   //   let string = ': ';
   //   let newArray = [];
   //   let counter = 1;
@@ -17,11 +16,9 @@ var number=function(array){
   //     counter++;
   //   })
   //   return newArray;
-    
-    return array.map((element,index)=> ++index +': ' + element)
-    
-    
-  }
 
-  console.log(number([]));//[]
-  console.log(number(["a", "b", "c"]));// ["1: a", "2: b", "3: c"]
+  return array.map((element, index) => ++index + ": " + element);
+};
+
+console.log(number([])); //[]
+console.log(number(["a", "b", "c"])); // ["1: a", "2: b", "3: c"]
