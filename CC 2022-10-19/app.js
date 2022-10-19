@@ -7,14 +7,12 @@
 // getAverage([1,1,1,1,1,1,1,2]),1)
 
 function getAverage(arr) {
-    //loop thorough array to get sum of all values
-    let sum = arr.reduce((accu,current)=> accu + current,0)
-    //avg-> sum/arr.length
+  //loop thorough array to get sum of all values
+  let sum = arr.reduce((accu, current) => accu + current, 0);
+  //avg-> sum/arr.length
 
-    //return
-    return Math.floor(sum / arr.length)
-
-
+  //return
+  return Math.floor(sum / arr.length);
 }
 
 console.log(getAverage([2, 2, 2, 2]), 2);
