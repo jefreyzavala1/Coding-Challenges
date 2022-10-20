@@ -8,9 +8,9 @@
 // repeats([5, 17, 18, 11, 13, 18, 11, 13]),22)
 // repeats([5, 10, 19, 13, 10, 13]),24)
 
-function repeats(array){
-    //iterate through array and use firstindex and lastindex to see if only one appears
-    return array.filter(num=> array.indexOf(num)=== array.lastIndexOf(num)).reduce((accu,current)=> accu + current,0)
+function repeats(array) {
+  //iterate through array and use firstindex and lastindex to see if only one appears
+  return array
+    .filter((num) => array.indexOf(num) === array.lastIndexOf(num))
+    .reduce((accu, current) => accu + current, 0);
 }
-
-console.log()
