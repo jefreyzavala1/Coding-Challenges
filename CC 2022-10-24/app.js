@@ -7,6 +7,10 @@
 // ([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) => [-8, 26]
 // ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
+//an arrays of numbers containing some even numbers will be giving another number to know what im returning 
+//array will not be empty.at least num in the array.
+//will it be always number, postive or negative , characters floated values, a number writing as a string
+//
 function evenNumbers(array, number) {
   // good luck
 
