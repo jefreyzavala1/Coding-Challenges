@@ -12,9 +12,18 @@
 // Once each sub array contains no duplicates you can just reduce multiplying the length of each sub array together
 //to get the total combinations
 
+//no funny bizz arr - multiple each uni sub array 
+//num > uni combination
 function solve(arr) {
+    //set -> uni values
+    //map to get array of new sets without dups
+    //use reduce to count the length of each subarray
+    //arr.map(sA=> new Set(A).size).reduce((accu,current)=> acc * current.length,1)
   let newArray = arr.map((item) => [...new Set(item)]);
   return newArray.reduce((accu, current) => accu * current.length, 1);
 }
 
 console.log(4, solve([[1, 2], [4], [5, 6]]));
+
+//one liner es6 syntax
+//const solve = arr => arr.reduce((a,c)=>a*new Set(current).size,1)
