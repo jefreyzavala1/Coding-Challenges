@@ -17,3 +17,5 @@ function nthSmallest(array,value){
 }
 
 //const nthSmallest = (arr,pos)=> array.sort((a,b)=> b -a)[pos-1]
+console.log(nthSmallest([3,1,2],2));//2
+console.log(nthSmallest([177,225,243,-169,-12,-5,2,92],5));//92
