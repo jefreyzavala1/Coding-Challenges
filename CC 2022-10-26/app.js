@@ -11,3 +11,9 @@
 // nthSmallest({15,20,7,10,4,3} ,3) ==> return (7) 
 // nthSmallest({15,20,7,10,4,3} ,3) ==> return (7) 
 // nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92) 
+
+function nthSmallest(array,value){
+    return array.sort((a,b)=> a - b)[value-1]
+}
+
+//const nthSmallest = (arr,pos)=> array.sort((a,b)=> b -a)[pos-1]
