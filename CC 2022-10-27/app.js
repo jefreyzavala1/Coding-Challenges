@@ -26,3 +26,6 @@ function duplicateEncode(word) {
 
 console.log(duplicateEncode("din")); //"((("
 console.log(duplicateEncode("recede")); //"()()()"
+
+// const duplicateEncode= word=> word.toLowerCase().split('').map((element,i,array) =>
+//     array.indexOf(element) === array.lastIndexOf(element) ? "(" : ")").join("");
