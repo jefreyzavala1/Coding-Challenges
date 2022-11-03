@@ -38,3 +38,8 @@ function last(x) {
   //console.log(goodArray)
   return goodArray;
 }
+
+function last2(x){
+  return x.split(' ').sort((a,b)=> a.slice(-1).localeCompare(b.slice(-1)));
+
+}
