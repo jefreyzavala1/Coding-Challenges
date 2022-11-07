@@ -10,21 +10,21 @@
 // Note: N may be 1 or less (in the latter case, the first array will be []).
 
 function findDeletedNumber(arr, mixArr) {
-    //
-    if(arr.length===mixArr.length){
-      return 0;
-    }
-    let obj = {};
-  
-    for (let i = 0; i < mixArr.length;i++){
-      if(!obj[mixArr[i]]){
-        obj[mixArr[i]] = mixArr[i];
-      }
-    }
-    
-    for(let i = 0; i < arr.length;i++){
-      if (!obj[arr[i]]){
-        return arr[i]
-      }
+  //
+  if (arr.length === mixArr.length) {
+    return 0;
+  }
+  let obj = {};
+
+  for (let i = 0; i < mixArr.length; i++) {
+    if (!obj[mixArr[i]]) {
+      obj[mixArr[i]] = mixArr[i];
     }
   }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!obj[arr[i]]) {
+      return arr[i];
+    }
+  }
+}
