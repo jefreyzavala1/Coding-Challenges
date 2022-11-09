@@ -41,4 +41,10 @@ function arrayDiff(a, b) {
       }
       return array
     }
+
+
+    function arrayDiff(a,b){
+        let newSet = newSet(b);
+        return a.filter(n=> !newSet.has(n);
+    }
     
