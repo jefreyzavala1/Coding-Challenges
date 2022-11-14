@@ -11,3 +11,9 @@
 
 // gimme([5, 10, 14]) => 1
 // 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
+
+//an array of 3 different numbers
+  //return the index in which the middle number is found
+  
+  //make a copy of array using slice and sort in order then store middle number and use indexof which original array
+  
