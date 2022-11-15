@@ -26,3 +26,13 @@ function gimme(triplet) {
   let middle = copy[1];
   return triplet.indexOf(middle);
 }
+
+function gimme2(triplet){
+    let middle = triplet[1];
+    if(middle > triplet[0] && middle < triplet[2]){
+        middle = [triplet[0]];
+    }else if(middle > triplet[0] && middle > triplet[2]){
+      middle = triplet[2];
+    }
+    return triplet.indexOf(middle);
+}
