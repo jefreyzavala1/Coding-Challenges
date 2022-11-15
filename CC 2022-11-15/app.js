@@ -19,7 +19,7 @@ function sortArray(array) {
     //[8,6,4]  even array
     //empty array where for index i will check if its the same index at original if so if even shift and push else do same for odd array
     
-  let filterOdd= array.filter(num=> num%2===1);//[5,3]
+  let filterOdd= array.filter(num=> num%2!==0);//[5,3]
   let filterEven = array.filter(num=> num%2===0);//[8,6,4]
   filterOdd = filterOdd.sort((a,b)=> a -b);//[3,5]
   
