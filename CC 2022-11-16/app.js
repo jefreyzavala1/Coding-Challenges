@@ -25,3 +25,14 @@ function averageLength(array) {
 
   return array.map((letter) => letter[0].repeat(average));
 }
+
+const averageLength2 = (array) => {
+  let average = Math.round(
+    array
+      .map((element) => element.length)
+      .reduce((accu, current) => accu + current, 0) / array.length
+  );
+  //3
+
+  return array.map((letter) => letter[0].repeat(average));
+};
