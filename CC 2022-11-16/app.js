@@ -26,6 +26,7 @@ function averageLength(array) {
   return array.map((letter) => letter[0].repeat(average));
 }
 
+//ES6 arrow function
 const averageLength2 = (array) => {
   let average = Math.round(
     array
