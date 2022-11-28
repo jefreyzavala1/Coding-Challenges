@@ -11,6 +11,7 @@ const removeConsecutiveDuplicates = (s) => {
   // "alpha beta gamma delta alpha beta gamma delta"
 
   //iterate through string one by one and for each word that is consecutive splice string to a certain point and keep going
+  //will it be an empty string, does it contain special chatacters will always consists of consecutavive words
 
   let arrayWords = s.split(" ");
   let newArray = [];
