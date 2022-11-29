@@ -9,3 +9,18 @@
 // dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]),['codewars','picaniny','hubububo'])
 // dup(["abracadabra","allottee","assessee"]),['abracadabra','alote','asese'])
 // dup(["kelless","keenness"]), ['keles','kenes'])
+
+function dup(s) {
+  //input an array of strings
+  //return an array of strings where consecutive duplicate letters are remove
+  //use for each to iterate over each string in array then use split and filter so that only letters the next to each other
+  // are contained
+  let array = [...s];
+  let newarray = [];
+  array.forEach((letters, i, array) => {
+    let chararray = letters.split("");
+    chararray = chararray.filter((itm, ind, arr) => itm !== arr[ind - 1]);
+    newarray.push(chararray.join(""));
+  });
+  return newarray;
+}
