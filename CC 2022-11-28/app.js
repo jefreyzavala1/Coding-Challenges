@@ -24,3 +24,12 @@ function dup(s) {
   });
   return newarray;
 }
+
+function dup(s) {
+  return s.map((letters, i, array) =>
+    letters
+      .split("")
+      .filter((item, index, array) => item !== array[index - 1])
+      .join("")
+  );
+}
