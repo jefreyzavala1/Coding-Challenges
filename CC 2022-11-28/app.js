@@ -25,7 +25,8 @@ function dup(s) {
   return newarray;
 }
 
-function dup(s) {
+//Es6 arrow function syntax
+function dup2(s) {
   return s.map((letters, i, array) =>
     letters
       .split("")
