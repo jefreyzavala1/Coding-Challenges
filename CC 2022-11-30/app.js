@@ -37,3 +37,8 @@ function absentVowel(x) {
     }
   }
 }
+
+//Es6
+function absentVowel2(x) {
+  return [..."aeiou"].findIndex((v) => !x.includes(v));
+}
