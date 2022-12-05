@@ -18,3 +18,15 @@ function occuringChar(s) {
 
 console.log(occuringChar("aba"), "{'a':2,'b':1}");
 console.log(occuringChar("dog"), "{'d':1,'o':1,'g':1}");
+
+function countChars(str) {
+  let countObj = {};
+  for (const c of str) {
+    if (countObj[c]) {
+      countObj[c]++;
+    } else {
+      countObj[c] = 1;
+    }
+  }
+  return countObj;
+}
