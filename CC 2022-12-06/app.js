@@ -20,3 +20,18 @@
 var numJewelsInStones = function (jewels, stones) {
   return stones.split("").filter((char) => jewels.includes(char)).length;
 };
+
+var numJewelsInStones2 = function (jewels, stones) {
+  const map = {};
+  let count = 0;
+  for (const c of jewels) {
+    map[c] = true;
+  }
+
+  for (const c of stones) {
+    if (map[c]) {
+      count++;
+    }
+  }
+  return count;
+};
