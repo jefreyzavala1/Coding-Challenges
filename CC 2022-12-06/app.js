@@ -24,12 +24,12 @@ var numJewelsInStones = function (jewels, stones) {
 var numJewelsInStones2 = function (jewels, stones) {
   const map = {};
   let count = 0;
-  for (const c of jewels) {
-    map[c] = true;
+  for (const jewel of jewels) {
+    map[jewel] = true;
   }
 
-  for (const c of stones) {
-    if (map[c]) {
+  for (const stone of stones) {
+    if (map[stone]) {
       count++;
     }
   }
