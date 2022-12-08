@@ -11,6 +11,7 @@
 //return the character that basically appears the most in string
 //'aacd'=> 'a'
 //'hello world!'=>l
+//Use hash map to put each character in an object with its count and then find the highest by looping through object
 
 function maxCharacter(s) {
   let obj = {};
