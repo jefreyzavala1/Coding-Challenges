@@ -19,6 +19,24 @@ var containsDuplicate = function (nums) {
   //create a hashmap and loop through array if property found in object
   //then return false and make it return true by default which gives an indication that whole array ran and no
   //dups were found
+  let obj = {};
+
+  //   for(let i = 0; i< nums.length;i++){
+  //       if(obj[nums[i]]!=undefined){
+  //           return true;
+  //       }else{
+  //           obj[nums[i]] = nums[i];
+  //       }
+  //   }
+
+  for (const num of nums) {
+    if (obj[num] != undefined) {
+      return true;
+    } else {
+      obj[num] = num;
+    }
+  }
+  return false;
 };
 
 console.log(containsDuplicate([1, 2, 3, 1]), "true");
