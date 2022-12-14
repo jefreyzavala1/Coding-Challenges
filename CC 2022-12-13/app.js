@@ -26,15 +26,17 @@ var majorityElement = function (nums) {
     } else {
       obj[num] = 1;
     }
-  }
-
-  let biggest = null;
-  let num = null;
-  for (const property in obj) {
-    if (obj[property] > biggest) {
-      biggest = obj[property];
-      num = Number(property);
+    if (obj[num] > nums.length / 2) {
+      return obj[num];
     }
   }
-  return num;
+
+  //   let biggest = null;
+  //   let num = null;
+  //   for (const property in obj) {
+  //     if (obj[property] > biggest) {
+  //       biggest = obj[property];
+  //       num = Number(property);
+  //     }
+  //   }
 };
