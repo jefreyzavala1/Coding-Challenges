@@ -19,7 +19,7 @@ function twoSum(array, sum) {
   let obj = {};
   for (const num of array) {
     if (obj[sum - num]) {
-      pairsArray.push([num, obj[sum - num]]);
+      pairsArray.push([num, sum - num]);
     } else {
       obj[num] = num;
     }
