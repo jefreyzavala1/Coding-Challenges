@@ -31,7 +31,7 @@ var minDeletionSize = function (strs) {
       .split("")
       .sort((a, b) => b.localeCompare(a))
       .join("");
-    //console.log(lex1, lex2);
+    console.log(lex1, lex2);
     //console.log(str);
     if (str != lex2) {
       counter++;
