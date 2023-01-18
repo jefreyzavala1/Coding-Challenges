@@ -11,8 +11,8 @@
 // You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
 function factorial(n) {
-  if (n === 1) {
-    return n;
+  if (n < 2) {
+    return 1;
   } else {
     return n * factorial(n - 1);
   }
