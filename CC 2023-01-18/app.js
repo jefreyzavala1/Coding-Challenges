@@ -18,4 +18,3 @@ function factorial(n) {
 }
 
 console.log(factorial(5));
-//recursion memoized and iterative
