@@ -3,3 +3,13 @@
 //Return your answer as a number
 
 //arr -> str & num
+
+function sumAllValues(arr) {
+  //sum all of the nums in the arr
+  //loop through all nums and add together
+  //reduce -> convert to nums and sum
+
+  return arr.reduce((accu, current) => accu + Number(current), 0);
+}
+
+console.log(sumAllValues([9, 3, "7", "3"]), 22);
