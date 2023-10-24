@@ -5,7 +5,7 @@
 // The array will never be empty.
 
 function getAverage(arr) {
-  return Math.ceil(
+  return Math.floor(
     arr.reduce((accu, current) => accu + Number(current), 0) / arr.length
   );
 }
