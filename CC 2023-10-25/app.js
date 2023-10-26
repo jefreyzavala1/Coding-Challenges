@@ -7,3 +7,27 @@
 // repeats([16, 0, 11, 4, 8, 16, 0, 11]),12)
 // repeats([5, 17, 18, 11, 13, 18, 11, 13]),22)
 // repeats([5, 10, 19, 13, 10, 13]),24)
+
+function repeats(arr) {
+  let obj = {};
+
+  for (const num of arr) {
+    if (obj[num]) {
+      obj[num]++;
+    } else {
+      obj[num] = 1;
+    }
+  }
+
+  //   console.log(obj);
+  let onceArray = [];
+  for (const key in obj) {
+    if (obj[key] === 1) {
+      onceArray.push(Number(key));
+    }
+  }
+
+  return onceArray.reduce((accu, current) => accu + current, 0);
+}
+
+console.log(repeats([4, 5, 7, 5, 4, 8]), 15);
