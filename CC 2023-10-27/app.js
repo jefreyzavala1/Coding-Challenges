@@ -8,3 +8,36 @@
 // solve([[1,2],[4,4],[5,6,6]]),4)
 // solve([[1,2],[3,4],[5,6]]),8)
 // solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
+
+function solve(arr) {
+  let nodupsarray = arr.map((array) => [...new Set(array)]);
+  return nodupsarray.reduce((accu, current) => accu * current.length, 1);
+}
+
+console.log(solve([[1, 2], [4], [5, 6]]), 4);
+console.log(
+  solve([
+    [1, 2],
+    [4, 4],
+    [5, 6, 6],
+  ]),
+  4
+);
+
+console.log(
+  solve([
+    [1, 2],
+    [3, 4],
+    [5, 6],
+  ]),
+  8
+);
+
+console.log(
+  solve([
+    [1, 2, 3],
+    [3, 4, 6, 6, 7],
+    [8, 9, 10, 12, 5, 6],
+  ]),
+  72
+);
